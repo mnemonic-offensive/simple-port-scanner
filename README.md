@@ -17,7 +17,7 @@ This is a simple "TCP connect" port scanner, made for stealthy, small-scale scan
 - A regular PowerShell script where you can specify target address and ports
 - A short one-liner that can fit in a Tweet
 
-Both is a simpler version of the PowerShell port scanner found in the [Nishang](https://github.com/samratashok/nishang) toolset.
+Both are a simpler version of the PowerShell port scanner found in the [Nishang](https://github.com/samratashok/nishang) toolset.
 
 ## How to use
 
@@ -59,3 +59,7 @@ by Kim Troennes, mnemonic
 **simple_port_scanner_oneliner.ps1**
 
 Modify the IP address and the comma-separated list of ports to scan in the beginning:`$ip="10.0.0.1";$Ports=@(22,80);`
+
+## Disclaimer
+
+This tool should be used for authorized testing and/or educational purposes only.

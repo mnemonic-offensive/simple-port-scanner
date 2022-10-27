@@ -1,0 +1,1 @@
+$ip="10.0.0.1";$Ports=@(22,80);"Simple port scan results for $ip";foreach($p in $Ports){$s=0;$c=New-Object System.Net.Sockets.TcpClient;$b=$c.BeginConnect($ip,$p,$null,$null);if($c.Connected){$s=1}else{sleep -m 250;if($c.Connected){$s=1}}$c.Close();if($s){"$p Open"}}
